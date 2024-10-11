@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.PantallaPrincipal">
+  <grid id="27dc6" binding="PanelPrincipal" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1094" height="614"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="17d62" class="javax.swing.JComboBox" binding="Bluetooth_Devices_Combo">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="c5aef" class="javax.swing.JLabel" binding="label1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Dispositivos Bluetooth Vinculados"/>
+        </properties>
+      </component>
+      <component id="838f8" class="javax.swing.JButton" binding="conectarButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Conectar"/>
+        </properties>
+      </component>
+      <tabbedpane id="ab98d" binding="panelX">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <tabLayoutPolicy value="1"/>
+          <tabPlacement value="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="3d03" binding="GET_INTEGRATION_TIME" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_INTEGRATION_TIME"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="25a3a">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="67c39" binding="GET_GAIN" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_GAIN"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="31df7" binding="GET_RAW_SPECTRUM" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_RAW_SPECTRUM"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="dfe83" binding="STOP_STREAMING" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="STOP_STREAMING"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="bedf7" binding="GET_TRANSFER_FUNCTION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_TRANSFER_FUNCTION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="438c9" binding="GET_DEFAULT_TRANSFER_FUNCTION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_DEFAULT_TRANSFER_FUNCTION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e925" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="El titulo no coincide, lo que hace es colocar los valores de la funcion de transferencia a sus estados originales"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="e1451" binding="GET_WAVELENGTH_CALIBRATION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_WAVELENGTH_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="c32ad" binding="GET_DEFAULT_WAVELENGTH_CALIBRATION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_DEFAULT_WAVELENGTH_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="4f7e2" binding="RELOAD_DEFAULT_WAVELENGTH_CALIBRATION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="RELOAD_DEFAULT_WAVELENGTH_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="cade6" binding="CALIBRATE_BACKGROUND" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="CALIBRATE_BACKGROUND"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="96601" binding="GET_BACKGROUND_CALIBRATIONS" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_BACKGROUND_CALIBRATIONS"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="c65ef" binding="CALIBRATE_DEFAULT_BACKGROUND" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="CALIBRATE_DEFAULT_BACKGROUND"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="49789" binding="GET_DEFAULT_BACKGROUND_CALIBRATIONS" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_DEFAULT_BACKGROUND_CALIBRATIONS"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="3f9bd" binding="RELOAD_DEFAULT_BACKGROUND_CALIBRATIONS" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="RELOAD_DEFAULT_BACKGROUND_CALIBRATIONS"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="de74a" binding="GET_LUX_CALIBRATION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_LUX_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="42840" binding="GET_DEFAULT_LUX_CALIBRATION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_DEFAULT_LUX_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="7267c" binding="RELOAD_DEFAULT_LUX_CALIBRATION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="RELOAD_DEFAULT_LUX_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="d7750" binding="GET_TIME" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_TIME"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="d80d0" binding="GET_DEVICE_STATE" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_DEVICE_STATE"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="6d1a7" binding="SET_SOFT_FACTORY_RESET" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_SOFT_FACTORY_RESET"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="659f3" binding="GET_BACKGROUND_COEFFICIENTS" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_BACKGROUND_COEFFICIENTS"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="b389b" binding="GET_DEVICE_INFO" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_DEVICE_INFO"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="93c96" binding="SET_HARD_FACTORY_RESET" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_HARD_FACTORY_RESET"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="81350" binding="GET_DEFAULT_BACKGROUND_COEFFICIENTS" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_DEFAULT_BACKGROUND_COEFFICIENTS"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="52156" binding="RELOAD_DEFAULT_BACKGROUND_COEFFICIENTS" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="RELOAD_DEFAULT_BACKGROUND_COEFFICIENTS"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="67577" binding="SET_INTEGRATION_TIME" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_INTEGRATION_TIME"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="832f4" class="javax.swing.JTextArea" binding="SET_INTEGRATION_TIME_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <hspacer id="e938a">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="aa220">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="d7c1f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Time the sensor is open obtaining data. (5ms - 7000)"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="f78f7" binding="SET_GAIN" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_GAIN"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="922a" class="javax.swing.JTextArea" binding="SET_GAIN_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <hspacer id="bfcaa">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="fe54f">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="330c2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Activates or deactivates the amplification of the received light signal ( 1 para activar o 0 para desactivar)"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="940b0" binding="SET_DEFAULT_TRANSFER_FUNCTION" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_DEFAULT_TRANSFER_FUNCTION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="b1793" binding="SET_WAVELENGTH_CALIBRATION" layout-manager="GridLayoutManager" row-count="12" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_WAVELENGTH_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="410de" class="javax.swing.JTextField" binding="SET_WAVELENGTH_CALIBRATION_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="6a713" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Coeficiente 1"/>
+                </properties>
+              </component>
+              <component id="e23d4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Coeficiente 2"/>
+                </properties>
+              </component>
+              <component id="d46f8" class="javax.swing.JTextField" binding="SET_WAVELENGTH_CALIBRATION_2">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="18d81" class="javax.swing.JTextField" binding="SET_WAVELENGTH_CALIBRATION_3">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="397b0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Coeficiente 3"/>
+                </properties>
+              </component>
+              <component id="d62ac" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Coeficiente 4"/>
+                </properties>
+              </component>
+              <component id="106a6" class="javax.swing.JTextField" binding="SET_WAVELENGTH_CALIBRATION_4">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="3586" class="javax.swing.JTextField" binding="SET_WAVELENGTH_CALIBRATION_5">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="f4bfd" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Coeficiente 5"/>
+                </properties>
+              </component>
+              <component id="b6855" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Coeficiente 6"/>
+                </properties>
+              </component>
+              <component id="1d918" class="javax.swing.JTextField" binding="SET_WAVELENGTH_CALIBRATION_6">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="e8782" binding="SET_LUX_CALIBRATION" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_LUX_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7b100" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Coeficiente de lux"/>
+                </properties>
+              </component>
+              <component id="927e4" class="javax.swing.JTextField" binding="luxCoef">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="b3a05" binding="SET_TIME" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_TIME"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e5f81" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Fecha (Dia/Mes/Año) ej (28/12/2024)"/>
+                </properties>
+              </component>
+              <component id="cd371" class="javax.swing.JTextField" binding="SET_TIME_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="136d9" class="javax.swing.JLabel" binding="Hora">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Hora Militar (HH:mm:ss) ej (18:30:05) -&gt; 6:30 PM con 15 Segundos "/>
+                </properties>
+              </component>
+              <component id="dcda6" class="javax.swing.JTextField" binding="SET_TIME_2">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="bb6f2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="(Las horas,minutos y segundos deben tener dos digitos -&gt; si tienes 2 segundos tienes que poner 02)"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="c6b0d" binding="SET_BLUETOOTH_NAME" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_BLUETOOTH_NAME"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a707f" class="javax.swing.JTextField" binding="SET_BLUETOOTH_NAME_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <vspacer id="889f8">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="c751f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Nuevo Nombre del dispositivo;"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="4a833" binding="GET_FLICKERING" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_FLICKERING"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="2abba" binding="GET_VIDEO_SAMPLE_RATE" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="GET_VIDEO_SAMPLE_RATE"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="a50e5" binding="SET_DEFAULT_LUX_CALIBRATION" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_DEFAULT_LUX_CALIBRATION"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="69358" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Nuevo coeficiente por defecto de lux"/>
+                </properties>
+              </component>
+              <vspacer id="80aae">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="89b45" class="javax.swing.JTextField" binding="SET_DEFAULT_LUX_CALIBRATION_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="27721" binding="SET_VIDEO_SAMPLE_RATE" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_VIDEO_SAMPLE_RATE"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fc038" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Nuevo Sample Rate: "/>
+                </properties>
+              </component>
+              <vspacer id="ca6b2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="d8043" class="javax.swing.JTextField" binding="SET_VIDEO_SAMPLE_RATE_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="5d2ec" binding="SET_BACKGROUND" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_BACKGROUND"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7e796" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Counts "/>
+                </properties>
+              </component>
+              <vspacer id="29df5">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="5b71a" class="javax.swing.JTextField" binding="SET_BACKGROUND_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="c0e3f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Integration Time"/>
+                </properties>
+              </component>
+              <component id="6b22f" class="javax.swing.JTextField" binding="SET_BACKGROUND_2">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="5d9da" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Temperatura"/>
+                </properties>
+              </component>
+              <component id="d431f" class="javax.swing.JTextField" binding="SET_BACKGROUND_3">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="c0029" binding="SET_DEFAULT_BACKGROUND" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SET_DEFAULT_BACKGROUND"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="17683" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Counts "/>
+                </properties>
+              </component>
+              <vspacer id="9d72a">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="88168" class="javax.swing.JTextField" binding="SET_DEFAULT_BACKGROUND_1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="b339e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Integration Time"/>
+                </properties>
+              </component>
+              <component id="c8e4f" class="javax.swing.JTextField" binding="SET_DEFAULT_BACKGROUND_2">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="d4827" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Temperatura"/>
+                </properties>
+              </component>
+              <component id="d8432" class="javax.swing.JTextField" binding="SET_DEFAULT_BACKGROUND_3">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="bc65d" class="javax.swing.JButton" binding="Send_Command">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="Send Command"/>
+        </properties>
+      </component>
+      <scrollpane id="eaf00">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="52207" class="javax.swing.JTextPane" binding="textPane2" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
