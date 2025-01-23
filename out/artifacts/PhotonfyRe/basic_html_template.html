@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<canvas id="myChart" ></canvas>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const arrayRange = (start, stop, step) =>
+        Array.from(
+            { length: (stop - start) / step + 1 },
+            (value, index) => start + index * step
+        );
+    const createGraph = (datosIn) => {
+
+        //let datos = [479, 479, 483, 491, 491, 488, 488, 486, 484, 485, 491, 489, 487, 488, 491, 487, 491, 487, 490, 487, 491, 494, 487, 494, 495, 486, 490, 490, 493, 499, 499, 491, 495, 492, 494, 502, 508, 512, 523, 539, 567, 599, 647, 687, 735, 777, 823, 859, 894, 906, 908, 893, 847, 809, 755, 702, 658, 626, 595, 576, 560, 544, 533, 529, 530, 514, 514, 515, 514, 515, 520, 524, 531, 534, 546, 562, 569, 590, 610, 624, 645, 666, 679, 707, 729, 747, 765, 774, 788, 799, 811, 824, 819, 824, 833, 836, 834, 845, 837, 837, 836, 833, 834, 834, 834, 834, 836, 840, 840, 839, 832, 830, 832, 824, 818, 822, 813, 811, 808, 808, 804, 796, 792, 787, 783, 518, 766, 763, 756, 750, 753, 749, 731, 725, 711, 710, 702, 696, 688, 683, 674, 669, 662, 651, 653, 643, 639, 626, 619, 614, 614, 612, 596, 596, 593, 595, 589, 583, 586, 580, 580, 563, 564, 559, 557, 556, 551, 549, 544, 542, 544, 542, 541, 539, 536, 535, 537, 527, 530, 529, 530, 529, 528, 528, 530, 526, 525, 522, 515, 520, 258, 765, 257, 511, 508, 510, 508, 506, 508, 504, 502, 502, 502, 498, 497, 498, 504, 501, 503, 497, 501, 503, 496, 499, 499, 497, 496, 501, 500, 506, 504, 495, 496, 501, 503, 499, 499, 498, 490, 500, 504, 502, 502, 496, 498, 498, 502, 597, 0, 225, 0, 500, 499, 497, 498, 502, 495, 495, 498, 496, 495, 502, 494, 491, 492, 495, 491, 492, 495]
+        let datos = [{{datos}}]
+
+
+        let datosX = arrayRange(380,780,400/datos.length)
+        let colores = arrayRange(240,0,-240/datos.length)
+        let datosOrganizados =[]
+        let coloresOrganizados = []
+        datos.forEach((element,index) => {
+            datosOrganizados.push({"x":datosX[index],"y": element,"pointBackgroundColor":"rgba(0,255,255,1)"})
+            coloresOrganizados.push("hsl("+colores[index]+",100%,50%)")
+        });
+        console.log(coloresOrganizados)
+        new Chart("myChart", {
+            type: "scatter",
+            data: {
+                datasets: [{
+                    pointRadius: 4,
+                    pointBackgroundColor: coloresOrganizados,
+                    data: datosOrganizados
+                }]
+            }
+        });
+    }
+    createGraph()
+
+</script>

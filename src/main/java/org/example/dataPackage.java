@@ -127,7 +127,8 @@ class dataPackage {
                         }
                         return null;
 
-                    case 9, 11:
+                    case 9:
+                    case 11:
                         if(this.sequence == 0) {
                             dataTransferFunction = dataUnpacker.unpackTransferFunction(this.payload, this.sequence);
                         }else{
@@ -150,7 +151,8 @@ class dataPackage {
                     case 0x13:
                         this.UnpackedResponse = dataUnpacker.GET_BACKGROUND_CALIBRATIONS(this.payload);
                         break;
-                    case 0x19, 0x27:
+                    case 0x19:
+                        case 0x27:
                         this.UnpackedResponse = dataUnpacker.getLuxCalibration(this.payload);
                         break;
                     case 0x1E:

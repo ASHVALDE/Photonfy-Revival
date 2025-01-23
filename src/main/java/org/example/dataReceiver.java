@@ -32,8 +32,8 @@ public class dataReceiver extends Thread{
         }
         // Recibimos una lectura
         boolean leyendo = true;
-        var i = new Stack<Integer>();
-        var bytes = new Stack<Byte>();
+        Stack<Integer> i = new Stack<Integer>();
+        Stack<Byte> bytes = new Stack<Byte>();
         while(true){
             while(leyendo) {
 
