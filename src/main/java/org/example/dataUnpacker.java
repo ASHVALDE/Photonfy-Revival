@@ -158,4 +158,13 @@ public class dataUnpacker {
         return "SampleRate: "+SampleRate;
     }
 
+    public static String GET_BACKGROUND_COEFFICIENTS(List<Byte> payload) {
+        String response = "";
+        Stack<Float> UnpackedData = new Stack<Float>();
+        for (int i = 0; i < payload.size(); i=i+4) {
+            byte[] x = {payload.get(i),payload.get(i+1),payload.get(i+2),payload.get(i+3)};
+            UnpackedData.add(ByteBuffer.wrap(x).getFloat());
+        }
+        return UnpackedData.toString();
+    }
 }

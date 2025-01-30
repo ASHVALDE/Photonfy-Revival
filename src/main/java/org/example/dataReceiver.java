@@ -121,16 +121,8 @@ public class dataReceiver extends Thread{
 
 
                     String templatePath = "basic_html_template.html";
-
                     // Ruta donde guardaremos el archivo HTML generado
                     String outputPath = timestamp + File.separator + "output.html";
-
-
-                    // Variables para reemplazar en la plantilla
-                    String title = "Mi Página Web";
-                    String header = "¡Bienvenido a mi página!";
-                    String paragraph = "Este es un ejemplo de cómo usar plantillas HTML con Java.";
-
                     try {
                         // Leer la plantilla HTML
                         String htmlTemplate = new String(Files.readAllBytes(Paths.get(templatePath)));

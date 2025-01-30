@@ -133,13 +133,14 @@ class dataPackage {
                             dataTransferFunction = dataUnpacker.unpackTransferFunction(this.payload, this.sequence);
                         }else{
                             dataTransferFunction.addAll(dataUnpacker.unpackTransferFunction(this.payload,this.sequence));
-                            this.UnpackedResponse = "";
-                            for (int i = 0; i < dataTransferFunction.size(); i++) {
-                                this.UnpackedResponse = this.UnpackedResponse + i+" :"+dataTransferFunction.get(i).toString()+"\n";
-                            }
                         }
-
+                        this.UnpackedResponse = "";
+                        for (int i = 0; i < dataTransferFunction.size(); i++) {
+                            this.UnpackedResponse = this.UnpackedResponse + i+" :"+dataTransferFunction.get(i).toString()+"\n";
+                        }
                         break;
+
+                    case 0x10:
                     case 0xE:
                         Stack<Float> datos = dataUnpacker.GET_WAVELENGTH_CALIBRATION(this.payload);
                         this.UnpackedResponse = "";
@@ -167,6 +168,10 @@ class dataPackage {
                         break;
                     case 0x20:
                         this.UnpackedResponse = dataUnpacker.GET_TIME(this.payload);
+                        break;
+                    case 0x2E:
+                    case 0x2C:
+                        this.UnpackedResponse = dataUnpacker.GET_BACKGROUND_COEFFICIENTS(this.payload);
                         break;
                     case 0x32:
                         System.out.println(this.sequence);
