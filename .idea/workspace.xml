@@ -11,9 +11,16 @@
   <component name="ChangeListManager">
     <list default="true" id="55add068-bb0a-4977-a701-1fb3381d5ad4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dataPackage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dataReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataUnpacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dataUnpacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_html_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_html_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataUnpacker.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ASHVALDE"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ASHVALDE/Photonfy-Revival.git",
+    "accountId": "36d91e2b-272b-4b2e-b318-a82bc793c2f4"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -32,27 +51,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/CVR/Photonfy-Revival/META-INF&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/valde/Documents/PhotonfyCore",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "configurable.group.build",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -83,6 +103,15 @@
       <workItem from="1737920797623" duration="532000" />
       <workItem from="1737923901263" duration="3516000" />
       <workItem from="1738197346688" duration="9511000" />
+      <workItem from="1738207911601" duration="732000" />
+      <workItem from="1738340677277" duration="7173000" />
+      <workItem from="1738426040205" duration="12513000" />
+      <workItem from="1738453804413" duration="12941000" />
+      <workItem from="1738515827388" duration="1893000" />
+      <workItem from="1738543622539" duration="18000" />
+      <workItem from="1738543878266" duration="2000" />
+      <workItem from="1738543957273" duration="6147000" />
+      <workItem from="1738633299525" duration="12166000" />
     </task>
     <servers />
   </component>
