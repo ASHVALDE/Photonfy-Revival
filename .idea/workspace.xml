@@ -10,17 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55add068-bb0a-4977-a701-1fb3381d5ad4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PhotonfyRe_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PhotonfyRe_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_html_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_html_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/PhotonfyCore-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/PhotonfyCore-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataPackage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataSender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataUnpacker.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ASHVALDE"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ASHVALDE&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ASHVALDE/Photonfy-Revival.git",
-    "accountId": "36d91e2b-272b-4b2e-b318-a82bc793c2f4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ASHVALDE/Photonfy-Revival.git&quot;,
+    &quot;accountId&quot;: &quot;36d91e2b-272b-4b2e-b318-a82bc793c2f4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -65,7 +58,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -111,7 +104,8 @@
       <workItem from="1738543622539" duration="18000" />
       <workItem from="1738543878266" duration="2000" />
       <workItem from="1738543957273" duration="6147000" />
-      <workItem from="1738633299525" duration="12166000" />
+      <workItem from="1738633299525" duration="12777000" />
+      <workItem from="1738818322778" duration="1089000" />
     </task>
     <servers />
   </component>

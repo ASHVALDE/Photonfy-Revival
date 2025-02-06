@@ -71,10 +71,10 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         Hints.put(PhotonfyCodes.GET_DEFAULT_TRANSFER_FUNCTION.getHexCode(),"Gets the default spectrum calibration. This is an array of numbers that allow to go from pixel counts to microwatts per nanometer (µW/nm) by multiplication at the same time the function is calibrated. The calibration part means the transfer includes an adjustment that compensates the difference between the spectrum computed by the spectrometer and the same spectrum detected by the calibration sphere at the laboratory. That is, an adjustment from the sensor count to the lab measurement microwatts.");
         Hints.put(PhotonfyCodes.SET_WAVELENGTH_CALIBRATION.getHexCode(),"Sets the conversion factors from pixel number (its order in the array) to wavelength in nanometers (nm). These are 6 coefficients that multiply the pixel number to obtain the nanometers represented by that pixel. The first element is the largest coefficient multiplied by one, the second is the second largest multiplied by the pixel number, the third is the third largest coefficient multiplied by the square of the pixel number and so on until the sixth coefficient, the smallest one. Formula: nm = y (px) = a0 + a1 * px + a2 * px^2 + a3 * px^3 + a4 * px^4 + a5 * px^5.");
         Hints.put(PhotonfyCodes.GET_WAVELENGTH_CALIBRATION.getHexCode(),"Sets the conversion factors from pixel number (its order in the array) to wavelength in nanometers (nm). These are 6 coefficients that multiply the pixel number to obtain the nanometers represented by that pixel. The first element is the largest coefficient multiplied by one, the second is the second largest multiplied by the pixel number, the third is the third largest coefficient multiplied by the square of the pixel number and so on until the sixth coefficient, the smallest one. Formula: nm = y (px) = a0 + a1 * px + a2 * px^2 + a3 * px^3 + a4 * px^4 + a5 * px^5.");
-        Hints.put(PhotonfyCodes.SET_BACKGROUND_COEFFICIENTS.getHexCode(),"Set the backgrounds coefficients previously mesured. We have been mesured  14 diferents integration time in a range of temperature in order to know the background behaviour. formula:  y=a*x^2+b*x+c , where a,b,c is the matrix.");
-        Hints.put(PhotonfyCodes.GET_BACKGROUND_COEFFICIENTS.getHexCode(),"Get the backgrounds coefficients previously.\n(Esta funcion deberia devolver 14 Floats pero devuelve un array vacio)");
-        Hints.put(PhotonfyCodes.SET_DEFAULT_BACKGROUND_COEFFICIENTS.getHexCode(),"Set the backgrounds coefficients previously mesured. We have been mesured  14 diferents integration time in a range of temperature in order to know the background behaviour. formula:  y=a*x^2+b*x+c , where a,b,c is the matrix.");
-        Hints.put(PhotonfyCodes.GET_DEFAULT_BACKGROUND_COEFFICIENTS.getHexCode(),"Get the backgrounds coefficients previously.\n(Esta funcion deberia devolver 14 Floats pero devuelve un array vacio)");
+        Hints.put(PhotonfyCodes.SET_BACKGROUND_COEFFICIENTS.getHexCode(),"Set the backgrounds coefficients previously mesured. We have been mesured  14 diferents integration time in a range of temperature in order to know the background behaviour. formula:  y=a*x^2+b*x+c , where a,b,c is the matrix.\n (Copy from SET_BACKGROUND_COEFFICIENTS make Changes and paste on the coefficients field.)");
+        Hints.put(PhotonfyCodes.GET_BACKGROUND_COEFFICIENTS.getHexCode(),"Get the backgrounds coefficients previously.");
+        Hints.put(PhotonfyCodes.SET_DEFAULT_BACKGROUND_COEFFICIENTS.getHexCode(),"Set the backgrounds coefficients previously mesured. We have been mesured  14 diferents integration time in a range of temperature in order to know the background behaviour. formula:  y=a*x^2+b*x+c , where a,b,c is the matrix. \n (Copy from SET_BACKGROUND_COEFFICIENTS make Changes and paste on the coefficients field.)");
+        Hints.put(PhotonfyCodes.GET_DEFAULT_BACKGROUND_COEFFICIENTS.getHexCode(),"Get the backgrounds coefficients previously.");
         Hints.put(PhotonfyCodes.END_INITIALIZATION.getHexCode(),"This function must be called application have all the calibrations and information about the spectrometer. This function idicates to the spectrometer that is able to take fotos and videos because initialization phase has finalized.");
         Hints.put(PhotonfyCodes.GET_FLICKERING.getHexCode(),"Get the flickering of the light.");
         Hints.put(PhotonfyCodes.SET_BLUETOOTH_NAME.getHexCode(),"Sets the bluetooth name.");
@@ -111,8 +111,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         map.put(PhotonfyCodes.SET_TIME.getHexCode(), new String[]{"Fecha (DD/MM/AAAA):", "Hora (HH:MM:SS con dos digitos):"});
         map.put(PhotonfyCodes.SET_BACKGROUND.getHexCode(), new String[]{"Counts:", "Tiempo de integracion(5-7000ms):", "Temperatura (Centigrados)"});
         map.put(PhotonfyCodes.SET_DEFAULT_BACKGROUND.getHexCode(), new String[]{"Counts:", "Tiempo de integracion(5-7000ms):", "Temperatura (Centigrados)"});
-        map.put(PhotonfyCodes.SET_BACKGROUND_COEFFICIENTS.getHexCode(), new String[]{"Coeficiente 1:","Coeficiente 2:","Coeficiente 3:","Coeficiente 4:","Coeficiente 5:","Coeficiente 6:","Coeficiente 7:","Coeficiente 8:","Coeficiente 9:","Coeficiente 10:","Coeficiente 11:","Coeficiente 12:","Coeficiente 13:","Coeficiente 14:"});
-        map.put(PhotonfyCodes.SET_DEFAULT_BACKGROUND_COEFFICIENTS.getHexCode(), new String[]{"Coeficiente 1:","Coeficiente 2:","Coeficiente 3:","Coeficiente 4:","Coeficiente 5:","Coeficiente 6:","Coeficiente 7:","Coeficiente 8:","Coeficiente 9:","Coeficiente 10:","Coeficiente 11:","Coeficiente 12:","Coeficiente 13:","Coeficiente 14:"});
+        map.put(PhotonfyCodes.SET_BACKGROUND_COEFFICIENTS.getHexCode(), new String[]{"Coeficientes:"});
+        map.put(PhotonfyCodes.SET_DEFAULT_BACKGROUND_COEFFICIENTS.getHexCode(), new String[]{"Coeficientes:"});
         map.put(PhotonfyCodes.SET_BLUETOOTH_NAME.getHexCode(), new String[]{"Nombre del dispositivo:"});
         for(PhotonfyCodes code : PhotonfyCodes.values()){
             if(Arrays.stream(Excluded).anyMatch(x -> x.equals(code.name()))){
@@ -155,7 +155,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
                 try {
                     StreamConnection conn = (StreamConnection) Connector.open("btspp://"+DeviceMAC+":5");
                     photonfy =  new Photonfy(conn.openInputStream(),conn.openOutputStream());
-                    photonfy.sender.SET_BLUETOOTH_NAME("HolaMundo");
                     photonfy.addListener(new Photonfy.DataListener() {
                         @Override
                         public void onPackageReceived(DataPackage dataPackage) throws IOException {
@@ -407,12 +406,15 @@ public class PantallaPrincipal extends javax.swing.JFrame {
                             break;
                         case SET_BACKGROUND_COEFFICIENTS:
                             try {
-                                List<Float> Values = new Stack<>();
-                                for(JTextArea Campos : Texts){
-                                    Float Value = Float.valueOf(Campos.getText());
-                                    Values.add(Value);
-                                }
-                                photonfy.sender.SET_BACKGROUND_COEFFICIENTS(Values);
+
+                                    String Value = (Texts.get(0).getText());
+                                    String[] Values = Value.split(",");
+                                    List<Float> datos = new Stack<>();
+                                    for (String tempS : Values) {
+                                        float tempF = Float.parseFloat(tempS);
+                                        datos.add(tempF);
+                                    }
+                                photonfy.sender.SET_BACKGROUND_COEFFICIENTS(datos);
                             } catch (NumberFormatException ex) {
                                 JOptionPane.showMessageDialog(PanelPrincipal, "El valor no corresponde a un numero entero", "Error", JOptionPane.ERROR_MESSAGE);
                             } catch (Exception ex) {
@@ -421,12 +423,15 @@ public class PantallaPrincipal extends javax.swing.JFrame {
                             break;
                         case SET_DEFAULT_BACKGROUND_COEFFICIENTS:
                             try {
-                                List<Float> Values = new Stack<>();
-                                for(JTextArea Campos : Texts){
-                                    Float Value = Float.valueOf(Campos.getText());
-                                    Values.add(Value);
+
+                                String Value = (Texts.get(0).getText());
+                                String[] Values = Value.split(",");
+                                List<Float> datos = new Stack<>();
+                                for (String tempS : Values) {
+                                    float tempF = Float.parseFloat(tempS);
+                                    datos.add(tempF);
                                 }
-                                photonfy.sender.SET_DEFAULT_BACKGROUND_COEFFICIENTS(Values);
+                                photonfy.sender.SET_DEFAULT_BACKGROUND_COEFFICIENTS(datos);
                             } catch (NumberFormatException ex) {
                                 JOptionPane.showMessageDialog(PanelPrincipal, "El valor no corresponde a un numero entero", "Error", JOptionPane.ERROR_MESSAGE);
                             } catch (Exception ex) {

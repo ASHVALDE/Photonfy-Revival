@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<canvas id="myChart"></canvas>
+<button id="downloadCsv">Download CSV</button>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const arrayRange = (start, stop, step) =>
+        Array.from(
+            { length: (stop - start) / step + 1 },
+            (value, index) => start + index * step
+        );
+
+    const createGraph = (datosIn) => {
+        let datos = [{{datos}}]; // Replace {{datos}} with actual data
+
+        let datosX = arrayRange(380, 780, 400 / datos.length);
+        let colores = arrayRange(240, 0, -240 / datos.length);
+        let datosOrganizados = [];
+        let coloresOrganizados = [];
+
+        datos.forEach((element, index) => {
+            datosOrganizados.push({ "x": datosX[index], "y": element, "pointBackgroundColor": "rgba(0,255,255,1)" });
+            coloresOrganizados.push("hsl(" + colores[index] + ",100%,50%)");
+        });
+
+        new Chart("myChart", {
+            type: "scatter",
+            data: {
+                datasets: [{
+                    pointRadius: 4,
+                    pointBackgroundColor: coloresOrganizados,
+                    data: datosOrganizados
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        type: 'linear',
+                        position: 'bottom',
+                        title: {
+                            display: true,
+                            text: 'Wavelenght', // Add your x-axis label here
+                            font: {
+                                size: 14,
+                                weight: 'bold'
+                            }
+                        },
+                        ticks: {
+                            display: true // Show x-axis labels
+                        },
+                        grid: {
+                            display: true // Show x-axis grid lines
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Values', // Add your y-axis label here
+                            font: {
+                                size: 14,
+                                weight: 'bold'
+                            }
+                        },
+                        ticks: {
+                            display: true // Show y-axis labels
+                        },
+                        grid: {
+                            display: true // Show y-axis grid lines
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false // Hide legend
+                    }
+                }
+            }
+        });
+    };
+
+    createGraph();
+
+    // Function to convert array to CSV
+    const arrayToCsv = (data) => {
+        return data.map(row => row.join(',')).join('\n');
+    };
+
+    // Function to trigger CSV download
+    const downloadCsv = (data, filename = 'data.csv') => {
+        const blob = new Blob([data], { type: 'text/csv' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.setAttribute('hidden', '');
+        a.setAttribute('href', url);
+        a.setAttribute('download', filename);
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    };
+
+    // Event listener for the download button
+    document.getElementById('downloadCsv').addEventListener('click', () => {
+        let datos = [{{datos}}]; // Replace {{datos}} with actual data
+        const csvData = arrayToCsv([datos]);
+        downloadCsv(csvData);
+    });
+</script>
+</body>
+
+</html>
