@@ -256,7 +256,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
                         case SET_INTEGRATION_TIME:
                             try {
                                 String IntegrationTime = Texts.get(0).getText();
-                                short IntegrationTimeValue = (short) Integer.parseInt(IntegrationTime);
+                                short IntegrationTimeValue = (short) Double.valueOf(IntegrationTime).intValue();
                                 photonfy.sender.SET_INTEGRATION_TIME(IntegrationTimeValue);
                             } catch (NumberFormatException ex) {
                                 JOptionPane.showMessageDialog(PanelPrincipal, "El valor no corresponde a un numero entero", "Error", JOptionPane.ERROR_MESSAGE);
