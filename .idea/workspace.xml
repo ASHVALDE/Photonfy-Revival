@@ -10,9 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55add068-bb0a-4977-a701-1fb3381d5ad4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PhotonfyRe_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PhotonfyRe_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Libraries/PhotonfyCore-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/PhotonfyCore-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_html_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_html_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PhotonfyRe_jar/PhotonfyRe.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PhotonfyRe_jar/PhotonfyRe.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PhotonfyRe_jar/PhotonfyRe_jar.zip" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PhotonfyRe_jar/PhotonfyRe_jar.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PantallaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,20 +56,25 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/valde/Documents/PhotonfyCore",
+    "last_opened_file_path": "C:/Users/valde/Documents/PhotonfyCore/out/artifacts/PhotonfyCore_jar/PhotonfyCore.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "configurable.group.build",
+    "settings.editor.selected.configurable": "configurable.group.language",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\valde\Documents\Photonfy\Libraries" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -105,11 +114,20 @@
       <workItem from="1738543878266" duration="2000" />
       <workItem from="1738543957273" duration="6147000" />
       <workItem from="1738633299525" duration="12777000" />
-      <workItem from="1738818322778" duration="1089000" />
+      <workItem from="1738818322778" duration="1989000" />
+      <workItem from="1738946805526" duration="7175000" />
+      <workItem from="1739033518004" duration="329000" />
+      <workItem from="1739330870803" duration="765000" />
+      <workItem from="1739332995123" duration="299000" />
+      <workItem from="1745024217429" duration="7783000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
